@@ -13,12 +13,12 @@ cursor = conn.cursor()
 # execute
 
 # Crear una cadena que almacene la sentencia de ingreso de información
-# se recuerda los atributos: nombre, apellido, equipo, numDorsal
+# se recuerda los atributos: nombre, apellido, equipo, 
 # 1 Jugador
 nombre = "Lee Sang"
 apellido = "hyeok"
 equipo = "SKT"
-cadena_sql = """INSERT INTO Jugador (nombre, apellido, equipo, numDorsal) \
+cadena_sql = """INSERT INTO Jugador (nombre, apellido, equipo) \
 VALUES ('%s', '%s', '%s', %d);""" % (nombre, apellido, equipo )
 
 # ejecutar el SQL
@@ -28,7 +28,7 @@ cursor.execute(cadena_sql)
 nombre = "Jose"
 apellido = "Deodo"
 equipo = "Fnatic"
-cadena_sql = """INSERT INTO Jugador (nombre, apellido, equipo, numDorsal) \
+cadena_sql = """INSERT INTO Jugador (nombre, apellido, equipo) \
 VALUES ('%s', '%s', '%s', %d);""" % (nombre, apellido, equipo )
 
 # ejecutar el SQL
@@ -38,7 +38,7 @@ cursor.execute(cadena_sql)
 nombre = "Keira"
 apellido = "Smith"
 equipo = "DRX"
-cadena_sql = """INSERT INTO Jugador (nombre, apellido, equipo, numDorsal) \
+cadena_sql = """INSERT INTO Jugador (nombre, apellido, equipo) \
 VALUES ('%s', '%s', '%s', %d);""" % (nombre, apellido, equipo )
 
 # ejecutar el SQL
@@ -48,7 +48,7 @@ cursor.execute(cadena_sql)
 nombre = "Kim Hyuk"
 apellido = "kyu "
 equipo = "Lyon Gaming"
-cadena_sql = """INSERT INTO Jugador (nombre, apellido, equipo, numDorsal) \
+cadena_sql = """INSERT INTO Jugador (nombre, apellido, equipo) \
 VALUES ('%s', '%s', '%s', %d);""" % (nombre, apellido, equipo)
 
 # ejecutar el SQL
